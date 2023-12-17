@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>PHP Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Simple To-Do List</title>
 </head>
 <body>
 
-  <?php
-    $message = "Hello, PHP!";
-    echo "<h1>$message</h1>";
-  ?>
+  <div class="container">
+    <h1>Simple To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Add a new task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
